@@ -8,17 +8,17 @@
  */
 
 /* These styles assume you are using ul and li */
-.dropit {
+.dropit .dropit-inverse{
     list-style: none;
 	padding: 0;
 	margin: 15px 0 0;
     float: right;
     display: inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-inverse .dropit-trigger { position: relative; }
 .dropit .dropit-submenu {
     position: absolute;
-    top: 100%;
+    top bottom: 100%;
     right: 0; /* dropdown left or right */
     z-index: 1000;
     display: none;
@@ -27,13 +27,13 @@
 	padding: 20px;
 	margin: 20px 0 0;
 }
-.dropit .dropit-open .dropit-submenu { 
+.dropit .dropit-inverse .dropit-open .dropit-submenu { 
     display: block;
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px; 
 }
- .dropit .dropit-open .dropit-submenu:after {
+ .dropit .dropit-inverse .dropit-open .dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -45,16 +45,17 @@
   top: -8px;
   right: 10px;
  }
- .dropit .dropit-open .dropit-submenu li {
+ .dropit .dropit-inverse .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
  }
- .dropit .dropit-open .dropit-submenu li:last-child {
+ .dropit .dropit-inverse .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
  }
- .dropit .dropit-open .dropit-submenu li a {
+ .dropit .dropit-inverse .dropit-open .dropit-submenu li a {
   color:#34495E;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
  }
+
